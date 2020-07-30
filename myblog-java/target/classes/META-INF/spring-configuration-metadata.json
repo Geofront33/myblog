@@ -1,27 +1,27 @@
 {
   "groups": [
     {
-      "name": "markerhub.jwt",
-      "type": "com.markerhub.util.JwtUtils",
-      "sourceType": "com.markerhub.util.JwtUtils"
+      "name": "example.jwt",
+      "type": "com.example.util.JwtUtils",
+      "sourceType": "com.example.util.JwtUtils"
     }
   ],
   "properties": [
     {
-      "name": "markerhub.jwt.expire",
+      "name": "example.jwt.expire",
       "type": "java.lang.Long",
-      "sourceType": "com.markerhub.util.JwtUtils",
+      "sourceType": "com.example.util.JwtUtils",
       "defaultValue": 0
     },
     {
-      "name": "markerhub.jwt.header",
+      "name": "example.jwt.header",
       "type": "java.lang.String",
-      "sourceType": "com.markerhub.util.JwtUtils"
+      "sourceType": "com.example.util.JwtUtils"
     },
     {
-      "name": "markerhub.jwt.secret",
+      "name": "example.jwt.secret",
       "type": "java.lang.String",
-      "sourceType": "com.markerhub.util.JwtUtils"
+      "sourceType": "com.example.util.JwtUtils"
     }
   ],
   "hints": []
