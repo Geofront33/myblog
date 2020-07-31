@@ -14,7 +14,7 @@ Vue.config.productionTip = false
 Vue.use(ElementUI)
 
 var axios = require('axios')
-axios.defaults.baseURL = 'http://localhost:8081'
+axios.defaults.baseURL = 'http://49.234.217.229:8081'
 
 Vue.prototype.$axios = axios
 Vue.prototype.HOST = "/"
