@@ -9,7 +9,7 @@
             <el-link href="/blogs">主页</el-link>
             <el-divider direction="vertical"></el-divider>
             <span>
-                <el-link type="success" href="/blog/add" :disabled="!hasLogin">发表文章</el-link>
+                <el-link type="success" href="/add" :disabled="!hasLogin">发表文章</el-link>
             </span>
             <el-divider direction="vertical"></el-divider>
             <span v-show="!hasLogin">

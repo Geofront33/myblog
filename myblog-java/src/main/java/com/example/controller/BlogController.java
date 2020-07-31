@@ -58,6 +58,7 @@ public class BlogController {
             temp.setStatus(0);
         }
 
+
         BeanUtil.copyProperties(blog, temp, "id", "userId", "created", "status");
         blogService.saveOrUpdate(temp);
 
