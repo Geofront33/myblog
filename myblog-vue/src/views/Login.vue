@@ -15,9 +15,6 @@
             <el-form-item style="width: 100%">
                 <el-button type="primary" style="width: 100%;background: #505458;border: none" v-on:click="submitForm('ruleForm')">登录</el-button>
             </el-form-item>
-            <el-form-item style="width: 100%">
-                <el-button type="primary" style="width: 100%;background: #505458;border: none" v-on:click="resetForm('ruleForm')">注册</el-button>
-            </el-form-item>
         </el-form>
     </div>
 </template>
@@ -63,9 +60,6 @@
                         return false;
                     }
                 });
-            },
-            resetForm(formName) {
-                this.$refs[formName].resetFields();
             }
         }
     }
@@ -93,5 +87,9 @@
         margin: 0 auto 40px auto;
         text-align: center;
         color: #505458;
+    }
+    a {
+        text-decoration: none;
+        color: white;
     }
 </style>

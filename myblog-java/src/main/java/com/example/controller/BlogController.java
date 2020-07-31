@@ -16,14 +16,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
 
-/**
- * <p>
- *  前端控制器
- * </p>
- *
- * @author 关注公众号：MarkerHub
- * @since 2020-05-25
- */
 @RestController
 public class BlogController {
 
@@ -71,7 +63,11 @@ public class BlogController {
 
         return Result.succ(null);
     }
-
+    @GetMapping("/blog/delete/{id}")
+    public Result delete(@PathVariable(name = "id") Long id){
+        blogService.removeById(id);
+        return Result.succ(null);
+    }
 
 }
 

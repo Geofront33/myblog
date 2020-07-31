@@ -17,6 +17,7 @@ var axios = require('axios')
 axios.defaults.baseURL = 'http://localhost:8081'
 
 Vue.prototype.$axios = axios
+Vue.prototype.HOST = "/"
 
 router.beforeEach((to, from, next) => {
       if (to.meta.requireAuth) {

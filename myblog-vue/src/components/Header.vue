@@ -9,15 +9,15 @@
             <el-link href="/blogs">主页</el-link>
             <el-divider direction="vertical"></el-divider>
             <span>
-          <el-link type="success" href="/blog/add" :disabled="!hasLogin">发表文章</el-link>
-        </span>
+                <el-link type="success" href="/blog/add" :disabled="!hasLogin">发表文章</el-link>
+            </span>
             <el-divider direction="vertical"></el-divider>
             <span v-show="!hasLogin">
-          <el-link type="primary" href="/login">登陆</el-link>
-        </span>
+                <el-link type="primary" href="/login">登陆</el-link>
+            </span>
             <span v-show="hasLogin">
-          <el-link type="danger" @click="logout">退出</el-link>
-        </span>
+                <el-link type="danger" @click="logout">退出</el-link>
+            </span>
         </div>
     </div>
 </template>
